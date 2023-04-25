@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "SIRA",
+    "slug": "SIRA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/hojita.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/sira.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins":[[
+      "expo-location",
+      {
+        "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+      }
+    ],[
+      "expo-media-library",{
+        "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+        "isAccessMediaLocationEnabled": true
+      }
+    ]],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config":{
+        "googleMaps":{
+          "apiKey": "tuapiKey"
+        }
+      },
+      "package": "com.utez.sira"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1a39e50-4170-4c93-a0e0-ed4f484d5f47"
+      }
+    }
+  }
+}
